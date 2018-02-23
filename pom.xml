@@ -5,7 +5,7 @@
     <artifactId>base</artifactId>
     <version>0.1</version>
     <packaging>jar</packaging>
-    <name>base</name>
+    <name>Base-Spring</name>
     <description>Projeto Base SpringBoot</description>
     <parent>
         <groupId>org.springframework.boot</groupId>
