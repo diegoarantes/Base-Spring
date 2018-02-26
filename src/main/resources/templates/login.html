@@ -10,8 +10,8 @@
 
         <link rel="icon" href="/layout/images/favicon.png" type="image/png" />
 
-        <link rel="stylesheet" href="/layout/css/bootstrap.min.css"/>
-        <link rel="stylesheet" href="/layout/css/font-awesome.min.css"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
 
         <style>body{background: #f3f5f9;}</style>
     </head>
@@ -52,7 +52,11 @@
                             <div class="form-group has-danger">
                                 <label class="sr-only" for="email">E-Mail Address</label>
                                 <div class="input-group mb-2 mr-sm-2 mb-sm-0">
-                                    <div class="input-group-addon" style="width: 2.6rem"><i class="fa fa-at"></i></div>
+                                    <div class="input-group-prepend" style="width: 39px">
+                                        <span class="input-group-text">
+                                            <i class="fa fa-at"></i> 
+                                        </span>                                                                                   
+                                    </div>
                                     <input type="email" name="username" class="form-control" id="username"
                                            placeholder="nome@exemplo.com" required autofocus>
                                 </div>
@@ -65,7 +69,11 @@
                             <div class="form-group">
                                 <label class="sr-only" for="password">Password</label>
                                 <div class="input-group mb-2 mr-sm-2 mb-sm-0">
-                                    <div class="input-group-addon" style="width: 2.6rem"><i class="fa fa-key"></i></div>
+                                    <div class="input-group-prepend" style="width: 39px">
+                                        <span class="input-group-text">
+                                            <i class="fa fa-key"></i>
+                                        </span>
+                                    </div>
                                     <input type="password" name="password" class="form-control" id="password"
                                            placeholder="Senha" required>
                                 </div>
@@ -73,14 +81,12 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-12" style="padding-top: .35rem">
-                            <div class="form-check mb-2 mr-sm-2 mb-sm-0">
-                                <label class="custom-control custom-checkbox mb-2 mr-sm-2 mb-sm-0">
-                                    <input type="checkbox" class="custom-control-input">
-                                        <span class="custom-control-indicator"></span>
-                                        <span class="custom-control-description">Lembrar-me</span>
-                                </label>
-                            </div>
+                        <div class="col-md-12" style="padding-top: .35rem">                         
+                                <div class="custom-control custom-checkbox mb-2 mr-sm-2 mb-sm-0">
+                                    <input type="checkbox" class="custom-control-input" id="chk-lembrar-me"/>                                 
+                                    <label class="custom-control-label" for="chk-lembrar-me">Lembrar-me</label>
+                                </div>
+                           
                         </div>
                     </div>
                     <div class="row" style="padding-top: 1rem">
@@ -95,8 +101,8 @@
             </div>
         </div>
 
-        <!-- <script src="/layout/js/jquery-3.2.1.slim.min.js"></script> -->
-        <!-- <script src="/layout/js/popper.min.js"></script> -->
-        <!-- <script src="/layout/js/bootstrap.min.js"></script> -->
+        <!--                <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+                        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+                        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>-->
     </body>
 </html>
