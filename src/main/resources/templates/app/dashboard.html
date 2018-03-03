@@ -7,29 +7,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>ABSoft - Dashboard</title>
         <link rel="icon" href="/layout/images/favicon.png" type="image/png" />
+        <link rel="stylesheet" type="text/css" href="/layout/css/style.css"/>
         <link rel="stylesheet" type="text/css" href="/webjars/bootstrap/4.0.0/css/bootstrap.min.css"/>
         <link rel="stylesheet" type="text/css" href="/webjars/font-awesome/4.7.0/css/font-awesome.min.css"/>
-        <style>
-            body {
-                background: #fff;
-            }
-            .navbar {
-                box-shadow: 0px 1px 5px 0px rgba(217,219,224,1);
-            }
-            .content {
-
-            }
-
-            .footer {
-                position: absolute;
-                bottom: 0;
-                width: 100%;
-                height: 50px;
-                line-height: 50px;
-                background-color: #f5f5f5;
-            }
-
-        </style>
     </head>
     <body>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -66,7 +46,6 @@
                     <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">
                         <span class="fa fa-sign-out"></span> Sair
                     </button>
-
                     <input type="hidden" th:name="${_csrf.parameterName}"
                            th:value="${_csrf.token}" />
                 </form>
@@ -84,9 +63,8 @@
             </div>
         </footer>
 
-        <script type="text/javascript" src="/webjars/jquery/3.2.1/jquery.min.js"></script>
-        <script type="text/javascript" src="/webjars/popper.js/1.12.9/umd/popper.min.js"></script>
-        <script type="text/javascript" src="/webjars/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-
+        <script src="/webjars/jquery/3.2.1/jquery.min.js"></script>
+        <script src="/webjars/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src="/webjars/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     </body>
 </html>
