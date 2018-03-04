@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>ABSoft</title>
+        <link rel="icon" th:href="@{/layout/images/favicon.png}" type="image/png" />
+        <link rel="stylesheet" type="text/css" th:href="@{/layout/css/style.css}"/>
+        <link rel="stylesheet" type="text/css" th:href="@{/webjars/bootstrap/4.0.0/css/bootstrap.min.css}"/>
+        <link rel="stylesheet" type="text/css" th:href="@{/webjars/font-awesome/4.7.0/css/font-awesome.min.css}"/>
+    </head>
+    <body>
+        <nav th:replace="layout/fragments/Menu :: navbar"></nav>
+
+        <main role="main" class="content col-md-12 ml-sm-12 col-lg-12 pt-3 px-4">
+            <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom">
+                <h1 class="h4">Dashboard</h1>
+                <div class="btn-toolbar mb-2 mb-md-0">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb-ab m-2 p-0">
+                            <li class="breadcrumb-item"><a href="/">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Dashboard</li>
+                        </ol>
+                    </nav>
+                    <button class="btn btn-sm btn-outline-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-wrench"></i>
+
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#"><i class="fa fa-print"></i> Imprimir</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#"><i class="fa fa-file-excel-o"></i> Exportar</a>
+                    </div>
+                </div>
+            </div>
+
+            <section layout:fragment="conteudo"></section>
+        </main>
+
+        <footer th:replace="layout/fragments/Footer :: footer"></footer>
+
+        <script th:src="@{/webjars/jquery/3.2.1/jquery.min.js}"></script>
+        <script th:src="@{/webjars/popper.js/1.12.9/umd/popper.min.js}"></script>
+        <script th:src="@{/webjars/bootstrap/4.0.0/js/bootstrap.min.js}"></script>
+
+        <th:block layout:fragment="javascript-extra"></th:block>
+    </body>
+</html>

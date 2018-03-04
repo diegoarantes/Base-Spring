@@ -7,22 +7,22 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>ABSoft - Login</title>
-        <link rel="icon" href="/layout/images/favicon.png" type="image/png" />
-        <link rel="stylesheet" type="text/css" href="/webjars/bootstrap/4.0.0/css/bootstrap.min.css"/>
-        <link rel="stylesheet" type="text/css" href="/webjars/font-awesome/4.7.0/css/font-awesome.min.css"/>
+        <link rel="icon" th:href="@{/layout/images/favicon.png}" type="image/png" />
+        <link rel="stylesheet" type="text/css" th:href="@{/webjars/bootstrap/4.0.0/css/bootstrap.min.css}"/>
+        <link rel="stylesheet" type="text/css" th:href="@{/webjars/font-awesome/4.7.0/css/font-awesome.min.css}"/>
     </head>
 
     <body style="background: #f3f5f9;">
         <header class="container-fluid text-center" style="background: #fff; margin-bottom: 40px; padding: 20px 0;">
-            <img alt="Absoft" src="/layout/images/logo.svg" style="width: 150px"/>
+            <img alt="Absoft" th:src="@{/layout/images/logo.svg}" style="width: 150px"/>
         </header>
 
-        <div class="container" style="max-width: 510px" >
+        <div class="container" style="max-width: 510px">
             <div class="card" style="padding: 20px;">
                 <form class="form-horizontal" method="POST" action="/login">
                     <div class="row">
                         <div class="col-md-12 text-center">
-                            <h3 style="margin-bottom: 0;">Bem vindo ao Absoft</h3>
+                            <h3 class="m-0">Bem vindo ao Absoft</h3>
                             <p style="color: #92a9be;">Acesse sua conta ou crie uma</p>
                             <hr/>
                         </div>
