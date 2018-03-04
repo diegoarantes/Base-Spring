@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-BR" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout/LayoutPadrao}">
+    <head>
+        <title>ABSoft - Usuários</title>
+    </head>
+    <th:block layout:fragment="breadcrumb">
+        <li class="breadcrumb-item active" aria-current="page"><a href="/sistema">sistema</a></li>
+        <li class="breadcrumb-item active" aria-current="page">usuarios</li>
+    </th:block>
+    <h1 layout:fragment="titulo">Usuários</h1>
+
+    <section layout:fragment="conteudo">
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link active" href="#"><i class="fa fa-key"></i> Cadastro</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fa fa-key"></i> Permissões</a>
+            </li>
+        </ul>
+
+        <div class="card border-0">
+            <div class="card-body p-1 pt-2 pb-2">
+                <button class="btn btn-primary" style="font-size: 13px">INCLUIR USUARIO</button>
+            </div>
+        </div>
+
+        <table id="tabela-usuarios" class="table table-sm table-striped table-bordered" cellspacing="0" width="100%">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Nome</th>
+                    <th>Usuário</th>
+                    <th>Status</th>
+                    <th>Opções</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Administrador</td>
+                    <td>admin@absoft.com.br</td>
+                    <td><span class="badge badge-success">Ativo</span></td>
+                    <td>
+                        <a href="#" data-toggle="tooltip" data-placement="top" title="Editar">
+                            <i class="fa fa-edit"></i> 
+                        </a>
+                        <a href="#" data-toggle="tooltip" data-placement="top" title="Inativar">
+                            <i class="fa fa-ban"></i> 
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Administrador</td>
+                    <td>admin@absoft.com.br</td>
+                    <td><span class="badge badge-success">Ativo</span></td>
+                    <td>
+                        <a href="#" data-toggle="tooltip" data-placement="top" title="Editar">
+                            <i class="fa fa-edit"></i> 
+                        </a>
+                        <a href="#" data-toggle="tooltip" data-placement="top" title="Inativar">
+                            <i class="fa fa-ban"></i> 
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Administrador</td>
+                    <td>admin@absoft.com.br</td>
+                    <td><span class="badge badge-success">Ativo</span></td>
+                    <td>
+                        <a href="#" data-toggle="tooltip" data-placement="top" title="Editar">
+                            <i class="fa fa-edit"></i> 
+                        </a>
+                        <a href="#" data-toggle="tooltip" data-placement="top" title="Inativar">
+                            <i class="fa fa-ban"></i> 
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Administrador</td>
+                    <td>admin@absoft.com.br</td>
+                    <td><span class="badge badge-success">Ativo</span></td>
+                    <td>
+                        <a href="#" data-toggle="tooltip" data-placement="top" title="Editar">
+                            <i class="fa fa-edit"></i> 
+                        </a>
+                        <a href="#" data-toggle="tooltip" data-placement="top" title="Inativar">
+                            <i class="fa fa-ban"></i> 
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Administrador</td>
+                    <td>admin@absoft.com.br</td>
+                    <td><span class="badge badge-success">Ativo</span></td>
+                    <td>
+                        <a href="#" data-toggle="tooltip" data-placement="top" title="Editar">
+                            <i class="fa fa-edit"></i> 
+                        </a>
+                        <a href="#" data-toggle="tooltip" data-placement="top" title="Inativar">
+                            <i class="fa fa-ban"></i> 
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Administrador</td>
+                    <td>admin@absoft.com.br</td>
+                    <td><span class="badge badge-success">Ativo</span></td>
+                    <td>
+                        <a href="#" data-toggle="tooltip" data-placement="top" title="Editar">
+                            <i class="fa fa-edit"></i> 
+                        </a>
+                        <a href="#" data-toggle="tooltip" data-placement="top" title="Inativar">
+                            <i class="fa fa-ban"></i> 
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Administrador</td>
+                    <td>admin@absoft.com.br</td>
+                    <td><span class="badge badge-success">Ativo</span></td>
+                    <td>
+                        <a href="#" data-toggle="tooltip" data-placement="top" title="Editar">
+                            <i class="fa fa-edit"></i> 
+                        </a>
+                        <a href="#" data-toggle="tooltip" data-placement="top" title="Inativar">
+                            <i class="fa fa-ban"></i> 
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Accountant</td>
+                    <td>Tokyo</td>
+                    <td><span class="badge badge-success">Ativo</span></td>
+                    <td>
+                        <a href="#" data-toggle="tooltip" data-placement="top" title="Editar">
+                            <i class="fa fa-edit"></i> 
+                        </a>
+                        <a href="#" data-toggle="tooltip" data-placement="top" title="Inativar">
+                            <i class="fa fa-ban"></i> 
+                        </a>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Junior Technical Author</td>
+                    <td>San Francisco</td>
+                    <td><span class="badge badge-danger">Inativo</span></td>
+                    <td>
+                        <a href="#" data-toggle="tooltip" data-placement="top" title="Editar">
+                            <i class="fa fa-edit"></i> 
+                        </a>
+                        <a href="#" data-toggle="tooltip" data-placement="top" title="Inativar">
+                            <i class="fa fa-ban"></i> 
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Senior Javascript Developer</td>
+                    <td>Edinburgh</td>
+                    <td><span class="badge badge-success">Ativo</span></td>
+                    <td>
+                        <a href="#" data-toggle="tooltip" data-placement="top" title="Editar">
+                            <i class="fa fa-edit"></i> 
+                        </a>
+                        <a href="#" data-toggle="tooltip" data-placement="top" title="Inativar">
+                            <i class="fa fa-ban"></i> 
+                        </a>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Accountant</td>
+                    <td>Tokyo</td>
+                    <td><span class="badge badge-danger">Inativo</span></td>
+                    <td>
+                        <a href="#" data-toggle="tooltip" data-placement="top" title="Editar">
+                            <i class="fa fa-edit"></i> 
+                        </a>
+                        <a href="#" data-toggle="tooltip" data-placement="top" title="Inativar">
+                            <i class="fa fa-ban"></i> 
+                        </a>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Integration Specialist</td>
+                    <td>New York</td>
+                    <td><span class="badge badge-danger">Inativo</span></td>
+                    <td>
+                        <a href="#" data-toggle="tooltip" data-placement="top" title="Editar">
+                            <i class="fa fa-edit"></i> 
+                        </a>
+                        <a href="#" data-toggle="tooltip" data-placement="top" title="Inativar">
+                            <i class="fa fa-ban"></i> 
+                        </a>
+                    </td>
+
+                </tr>
+
+            </tbody>
+        </table>
+
+    </section>
+
+    <th:block layout:fragment="javascript-extra">
+        <script type="text/javascript" th:inline="javascript">
+            /*<![CDATA[*/
+            $(document).ready(function () {
+            $('#tabela-usuarios').DataTable({
+            "language": {
+            "url": /*[[@{/layout/datatables/Portuguese-Brasil.json}]]*/
+            },
+                    "responsive": true,
+                    "filter" :false
+            });
+            });
+                    /*]]>*/
+
+                    $(function () {
+                    $('[data-toggle="tooltip"]').tooltip()
+                    })
+        </script>
+    </th:block>
+
+
+</html>
