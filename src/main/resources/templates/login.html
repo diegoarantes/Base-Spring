@@ -7,9 +7,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>ABSoft - Login</title>
-
         <link rel="icon" href="/layout/images/favicon.png" type="image/png" />
-
         <link rel="stylesheet" type="text/css" href="/webjars/bootstrap/4.0.0/css/bootstrap.min.css"/>
         <link rel="stylesheet" type="text/css" href="/webjars/font-awesome/4.7.0/css/font-awesome.min.css"/>
 
@@ -21,7 +19,6 @@
             <img alt="Absoft" src="/layout/images/logo.svg" style="width: 150px"/>
         </header>
 
-
         <div class="container" style="max-width: 510px" >
             <div class="card" style="padding: 20px;">
                 <form class="form-horizontal" method="POST" action="/login">
@@ -29,7 +26,7 @@
                         <div class="col-md-12 text-center">
                             <h3 style="margin-bottom: 0;">Bem vindo ao Absoft</h3>
                             <p style="color: #92a9be;">Acesse sua conta ou crie uma</p>
-                            <hr>
+                            <hr/>
                         </div>
                     </div>
 
@@ -37,9 +34,6 @@
                         <div class="col-md-12">
                             <div th:if="${param.error}" class="alert alert-danger alert-dismissible fade show" role="alert">
                                 <strong>Erro:</strong> Login ou senha inválidos.
-                                <!-- 					  <button type="button" class="close" data-dismiss="alert" aria-label="Fechar"> -->
-                                <!-- 					    <span aria-hidden="true">&times;</span> -->
-                                <!-- 					  </button> -->
                             </div>
                             <div th:if="${param.logout}">
                                 <div class="alert alert-info">Até logo!</div>
@@ -50,7 +44,7 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="form-group has-danger">
-                                <label class="sr-only" for="username">E-Mail Address</label>
+                                <label class="sr-only" for="username">E-Mail</label>
                                 <div class="input-group mb-2 mr-sm-2 mb-sm-0">
                                     <div class="input-group-prepend" style="width: 39px">
                                         <span class="input-group-text">
@@ -67,7 +61,7 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="form-group">
-                                <label class="sr-only" for="password">Password</label>
+                                <label class="sr-only" for="password">Senha</label>
                                 <div class="input-group mb-2 mr-sm-2 mb-sm-0">
                                     <div class="input-group-prepend" style="width: 39px">
                                         <span class="input-group-text">
@@ -82,11 +76,10 @@
                     </div>
                     <div class="row">
                         <div class="col-md-12" style="padding-top: .35rem">                         
-                                <div class="custom-control custom-checkbox mb-2 mr-sm-2 mb-sm-0">
-                                    <input type="checkbox" class="custom-control-input" id="chk-lembrar-me"/>                                 
-                                    <label class="custom-control-label" for="chk-lembrar-me">Lembrar-me</label>
-                                </div>
-                           
+                            <div class="custom-control custom-checkbox mb-2 mr-sm-2 mb-sm-0">
+                                <input type="checkbox" class="custom-control-input" id="chk-lembrar-me"/>                                 
+                                <label class="custom-control-label" for="chk-lembrar-me">Lembrar-me</label>
+                            </div>                           
                         </div>
                     </div>
                     <div class="row" style="padding-top: 1rem">
