@@ -33,7 +33,7 @@ public class BaseApplication {
        adicionaUsuarioAdmin();
     }
     @Autowired
-    private UsuarioRepository usuarioRepository;
+    private UsuarioRepository usuarioRepository; 
 
     public void adicionaUsuarioAdmin() {
         Usuario usuario = new Usuario();

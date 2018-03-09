@@ -20,7 +20,9 @@ import org.springframework.security.core.userdetails.UserDetails;
 @EqualsAndHashCode(of = "login")
 public class Usuario implements UserDetails {
 
-    @Id
+	private static final long serialVersionUID = 1L;
+
+	@Id
     private String login;
 
     @NotEmpty

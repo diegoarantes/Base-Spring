@@ -17,7 +17,9 @@ import org.springframework.security.core.GrantedAuthority;
 @EqualsAndHashCode(of = "permissao")
 public class Permissao implements GrantedAuthority {
 
-    @Id
+	private static final long serialVersionUID = 1L;
+
+	@Id
     private String permissao;
 
     @ManyToMany(mappedBy = "permissoes")
